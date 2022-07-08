@@ -15,7 +15,11 @@ jobs:
       matrix:
         ruby:
           - '3.1.2'
-
+    env:
+      HATENA_API_CONSUMER_KEY:    ${{ secrets.HATENA_API_CONSUMER_KEY }}
+      HATENA_API_CONSUMER_SECRET: ${{ secrets.HATENA_API_CONSUMER_SECRET }}
+      HATENA_API_REQUEST_TOKEN:   ${{ secrets.HATENA_API_REQUEST_TOKEN }}
+      HATENA_API_REQUEST_SECRET:  ${{ secrets.HATENA_API_REQUEST_SECRET }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
