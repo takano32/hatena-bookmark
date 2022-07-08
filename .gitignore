@@ -1,3 +1,6 @@
+Gemfile.lock
+/vendor/bundle/
+
 /.env
 
 /.bundle/
@@ -8,4 +11,4 @@
 /pkg/
 /spec/reports/
 /tmp/
-/vendor/bundle/
+
